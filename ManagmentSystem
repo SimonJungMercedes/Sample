@@ -1,0 +1,87 @@
+#include <iostream>
+#include <string>
+#include<Library2/source/Person.cpp>
+#include<Library2/source/Book.cpp>
+#include<Library2/source/Mobile.cpp>
+
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int addBook();
+int deleteBook();
+int addStudent();
+int deleteStudent();
+int rentBook();
+int returnBook();
+
+int main(int argc, char** argv) {
+	
+	int menu=0;
+	do{
+		cout<<"Choose your action:\n1. Add Book\n2. Delete Book\n3. Add Student\n4. Delete Student\n5. Rent a Book\n6. Return Book\n7. Exit\n";
+		cin>>menu;
+		
+		switch(menu)
+		{
+			case 1:{			
+				addBook();
+				break;
+			}
+			case 2:{
+				deleteBook();
+				break;
+			}
+			case 3:{
+				addStudent();
+				break;
+			}
+			case 4:{
+				deleteStudent();
+				break;
+			}
+			case 5:{
+				rentBook();
+				break;
+			}
+			case 6:{
+				returnBook();
+				break;
+			}
+			
+		}
+	}
+	while(menu!=7);
+
+	
+}
+
+int addBook(){
+	cout<<"function addBook called";
+	return 0;
+}
+
+int deleteBook(){
+	cout<<"function deleteBook called";
+	return 0;
+}
+
+int addStudent(){
+	cout<<"function addStudent called";
+	return 0;
+}
+
+int deleteStudent(){
+	cout<<"function deleteStudent called";
+	return 0;
+}
+
+
+int rentBook(){
+	cout<<"function rentBook called";
+	return 0;
+}
+
+int returnBook(){
+	cout<<"function returnBook called";
+	return 0;
+}
